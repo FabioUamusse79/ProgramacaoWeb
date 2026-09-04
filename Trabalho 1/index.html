@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Usuário</title>
+
+    
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <header class="cabecalho">
+            <h1>Cadastro de Usuário</h1>
+            <p>Sistema de Registo de Usuários</p>
+        </header>
+
+
+        
+        <nav class="navegacao">
+
+          
+
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Usuários</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+
+      
+        <main class="conteudo">
+
+            <div class="formulario-container">
+
+                <h2>Formulário de Cadastro</h2>
+
+                <p class="descricao">
+                    Preencha os campos abaixo para realizar o cadastro do usuário.
+                </p>
+
+                <form>
+
+                  
+                    <div class="campo">
+                        <label for="nome">Nome completo:</label>
+                        <input
+                            type="text"  id="nome" name="nome"    placeholder="Digite o seu nome completo"   required 
+                        >
+                    </div>
+
+
+                 
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input
+                            type="email"     id="email" name="email" placeholder="fabiouamusse92@gmail.com" required   
+                        >
+                    </div>
+
+
+                
+                    <div class="campo">
+                        <label for="password">Password:</label>
+                        <input
+                            type="password"  id="password" name="password"   placeholder="Digite a sua password"   required
+                        >
+                    </div>
+
+
+                   
+                    <div class="campo">
+                        <label>Sexo:</label>
+
+                        <div class="radio-grupo">
+
+                            <label class="radio">
+                                <input type="radio" name="sexo"value="masculino" >  Masculino  
+                                   
+                            </label>
+
+                            <label class="radio">
+                                <input  type="radio"name="sexo"value="feminino"> Feminino
+                                  
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                
+                    <div class="campo">
+                        <label for="endereco">Endereço:</label>
+                        <input
+                            type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço"   required
+                        >
+                    </div>
+
+
+                
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input
+                            type="tel"  id="telefone"  name="telefone" placeholder="+258 84 443 9817"
+                            required    
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="nacionalidade">Nacionalidade:</label>
+
+                        <select id="nacionalidade" name="nacionalidade" required>
+
+                            <option value="">  -- Selecione a nacionalidade --</option>
+                            <option value="mocambicana"> Moçambicana </option>
+                            <option value="angolana"> Angolana </option>
+                            <option value="brasileira"> Brasileira</option>
+                            <option value="Portuguesa">Portuguesa </option>
+                            <option value="Sul-Africana">Sul-Africana </option>
+                            <option value="Outra"> Outra</option>
+
+                        </select>
+                    </div>
+
+
+             
+                    <div class="campo">
+                        <label for="nivel">Nível Académico:</label>
+
+                        <select id="nivel" name="nivel" required>
+
+                            <option value="">  -- Selecione o Nivel académico --</option>
+                            <option value="ensino Básico"> Ensino Básico </option>
+                            <option value="ensino Médio"> Ensino Médio </option>
+                            <option value="técnico Profissional"> Técnico Profissional</option>
+                            <option value=" licenciatura"> Licenciatura</option>
+                            <option value="mestrado"> Mestrado </option>
+                            <option value="doutoramento"> Doutoramento</option>
+                            
+                        </select>
+                    </div>
+
+
+            
+                    <div class="campo">
+                        <label for="profissao">Profissão:</label>
+
+                        <input placeholder="Digite a sua profissão"  type="text" id="profissao" name="profissao"    required>  
+                              
+                    </div>
+
+
+                    <!-- BOTÕES -->
+                    <div class="botoes">
+
+                        <button type="submit" class="btn-cadastrar">Cadastrar  </button>
+                        <button type="reset" class="btn-limpar"> Limpar</button>
+                       
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+
+
+
+        <footer class="rodape">
+
+            <p>
+                &copy; 2026 - Sistema de Cadastro de Usuários
+            </p>
+
+            <p>
+                Fabio Uamusse
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
