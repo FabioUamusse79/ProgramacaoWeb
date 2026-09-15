@@ -1,0 +1,283 @@
+
+/* =========================================
+   1. BOX MODEL E BOX SIZING
+   ========================================= */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. DISPLAY E POSITION
+   ========================================= */
+
+.cabecalho {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.cabecalho h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #1e293b;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+/* =========================================
+   3. BOX MODEL
+   ========================================= */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.apresentacao {
+    background-color: white;
+    border: 1px solid #dbe3ed;
+    border-radius: 15px;
+    padding: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================================
+   4. FLOAT
+   ========================================= */
+
+.imagem {
+    width: 260px;
+    height: 200px;
+    background-color: #dbeafe;
+    border: 3px solid #2563eb;
+    border-radius: 12px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simbolo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+/* =========================================
+   5. DISPLAY GRID
+   ========================================= */
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #dbe3ed;
+    border-radius: 12px;
+    min-height: 160px;
+    transition: transform 0.2s;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+}
+
+.cartao h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   6. OVERFLOW
+   ========================================= */
+
+.cartao p {
+    overflow: auto;
+}
+
+/* =========================================
+   7. CSS GRID NOS PROJETOS
+   ========================================= */
+
+.projetos {
+    margin-bottom: 35px;
+}
+
+.projeto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.projeto-grid :hover {
+    transform: translateY(-5px);
+}
+
+.projeto {
+    background-color: #e0f2fe;
+    padding: 25px;
+    border-left: 5px solid #0284c7;
+    border-radius: 8px;
+}
+
+.projeto h3 {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   8. CONTACTO E FOOTER
+   ========================================= */
+
+.contacto {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 12px;
+    border: 1px solid #dbe3ed;
+}
+
+
+
+.rodape {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* =========================================
+   9. MEDIA QUERY
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .imagem {
+        width: 100%;
+        max-width: 300px;
+        float: none;
+    }
+
+    .cartoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projeto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+    .cartao {
+        margin: 20px;
+        border: 1px solid #dbe3ed;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cabecalho h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+
+    .apresentacao {
+        padding: 20px;
+    }
+
+    .texto h2 {
+        font-size: 1.6rem;
+    }
+}
