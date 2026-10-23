@@ -1,0 +1,123 @@
+
+/* Configuração geral da página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #d8c6b2;
+    font: normal 15pt Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    transition: background 0.5s;
+}
+
+/* Cabeçalho */
+header {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+/* Caixa centralizada */
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+/* Conteúdo da caixa */
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+#msg {
+    font-size: 15px;
+}
+
+#mensagem {
+    font-size: 20px;
+}
+
+#fimSemana {
+    font-size: 14px;
+}
+
+/* Imagem oval */
+#imagem {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Legenda da imagem */
+#legenda {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Botão */
+button {
+    background: #bd7782;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #914c59;
+}
+
+/* Resultado da confirmação */
+#resultado {
+    color: #a95665;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* Adaptação para telemóveis */
+@media (max-width: 550px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #imagem {
+        width: 160px;
+        height: 160px;
+    }
+}
